@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="./styles.css" />
+  <title>Website</title>
+</head>
+
+<body>
+  <div class="grid-container">
+    <header class="header">
+      <div class="brand">
+        <button onclick="openMenu()">
+          &#9776;
+        </button>
+        <a href="index.html">Website</a>
+      </div>
+      <div class="header-links">
+        <a href="cart.html">Cart</a>
+        <a href="signin.html">Sign In</a>
+      </div>
+    </header>
+    <aside class="sidebar">
+      <h3>Shopping Categories</h3>
+      <button class="sidebar-close-button" onclick="closeMenu()">x</button>
+      <ul>
+        <li class="anchor">
+          <a  href="electricals.html">Electricals</a>
+        </li>
+
+        <li class="anchor">
+          <a  href="nuts.html">Nuts & bolts</a>
+        </li>
+
+        <li class="anchor">
+            <a  href="paints.html">Paints & Brushes</a>
+        </li>
+        
+        <li class="anchor">
+            <a  href="pipes.html">Pipes $ Motors</a>
+        </li>
+
+        <li class="anchor">
+            <a  href="tiles.html">Tiles & Stones</a>
+        </li>
+
+      </ul>
+    </aside>
+    <main class="main">
+      <div class="content">
+        <ul class="products">
+          
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/pipes.jpeg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Pipes 1</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/pipes.jpeg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Pipes 2</a>
+              </div>
+              
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/pipes.jpeg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Pipes 3</a>
+              </div>
+              
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/pipes.jpeg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Pipes 4</a>
+              </div>
+              
+            </div>
+          </li>
+          <li>
+            <div class="product">
+              <img class="product-image" src="images/pipes.jpeg" alt="product" />
+              <div class="product-name">
+                <a href="product.html">Pipes 5</a>
+              </div>
+              
+            </div>
+          </li>
+
+        </ul>
+      </div>
+
+    </main>
+    <footer class="footer">
+      All right reserved.
+    </footer>
+  </div>
+  <script>
+    function openMenu() {
+      document.querySelector(".sidebar").classList.add("open");
+    }
+    function closeMenu() {
+      document.querySelector(".sidebar").classList.remove("open")
+    }
+  </script>
+</body>
+
+</html>
